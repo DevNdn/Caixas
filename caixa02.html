@@ -16,8 +16,38 @@
             width: 300px;
             font-family: monospace;
             text-align: center;
-            border-radius: 10px;
+            
             margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: right;
+        }
+
+        nav {
+            background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.356), rgba(128, 0, 128, 0.438), rgba(255, 166, 0, 0.532) );
+            padding: 10px;
+            width: 300px;
+            font-family: monospace;
+            text-align: center;
+            
+            margin: auto;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgba(255, 255, 255, 0.471);
+            margin-right: 10px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: greenyellow;
         }
 
         .links {
@@ -31,18 +61,31 @@
             background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.356), rgba(128, 0, 128, 0.438), rgba(255, 166, 0, 0.532) );
             border-radius: 5px;
             text-indent: 5px;
+            padding: 7px;
         }
 
+        article {
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
 
         footer {
+            background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.304), rgba(128, 0, 128, 0.227), rgba(255, 166, 0, 0.374) );
             width: 100%;
             height: 100px;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             left: 0;
-            text-align: right;
             font-style: italic;
             color: rgb(92, 90, 90);
+            padding: 10px;
+            
+
         }
 
     </style>
@@ -61,12 +104,19 @@
 <hr>
     <main>
         <section id="assuntos">
-            Primeiro Assunto
+            <h2>Primeiro Assunto</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cumque maiores illo quibusdam non beatae excepturi quia earum adipisci ipsa sit veniam consectetur quo, molestias id, dolor at? Aliquam, iste?</p>
+            </article>
         </section>
         <br>
         <section id="noticias">
-            <article>Primeira Notícia</article>
-            <article>Segunda Notícia</article>
+            <h2>Notícias</h2>
+            <h3>Notícia 1</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel incidunt sit ipsa blanditiis. Voluptatibus expedita odit harum dolore consequuntur suscipit hic. Nisi ipsum sapiente vitae nobis debitis quidem perferendis repudiandae.</p>
+            
+            <h3>Notícia 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit assumenda esse hic consequuntur veritatis excepturi modi quo nam impedit pariatur reprehenderit neque molestiae, sit voluptatibus. Sint, unde vero. Expedita.</p>
                 <aside>Conteudo periférico relativo à segunda notícia.</aside>
         </section>
     </main>
